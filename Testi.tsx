@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
-import{Rotate} from "./rotate"
-import {Adjust} from "./adjust"
+
 
 let urls: string[] = [
 "https://assets.imgix.net/unsplash/bear.jpg",
@@ -93,11 +92,11 @@ export const Testi = () => {
         Pick an Image
      </Button>
       <br/>
-     <Button onPress={Rotate}>
+     <Button onPress={increaseCount}>
        Rotate
      </Button>
      <br/>
-     <Button onPress={Adjust}>
+     <Button onPress={}>
       Adjust
      </Button>
      </Col>
