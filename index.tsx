@@ -7,8 +7,8 @@ import {
   Route,
 } from "react-router-dom";
 
-import Rotate from "./rotate";
-import Adjust from "./adjust";
+import Rotate from "./Rotate";
+import Adjust from "./Adjust";
 
 import App from './App';
 
@@ -20,7 +20,9 @@ root.render(
   <StrictMode>
   <Routes>
       <Route path="/" element={<App />} />
-      </Routes>
+      <Route path="rotate" element={<Rotate />} />
+      <Route path="adjust" element={<Adjust />} />
+  </Routes>
   
   </StrictMode>
   </BrowserRouter>,
