@@ -1,9 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
-
+import React, { useState } from 'react';
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 
-let i:number = 5;
 let urls: string[] = [
 "https://assets.imgix.net/unsplash/bear.jpg",
 "https://assets.imgix.net/unsplash/bridge.jpg",
@@ -43,39 +40,66 @@ let urls: string[] = [
 "https://assets.imgix.net/examples/womanlandscape.jpg",
 "https://assets.imgix.net/gif-examples/imgix-logo-ani.gif"];
 
-export const Card1 = () => (
 
-
-  <Card css={{ w: "100%", h: "500px" }}>
+  
+export const Testi = () => {
+  const [index, setIndex] = useState(0);
+    
+  const increaseCount = () => {
+    setIndex(index + 1);
+  }
+  const decreaseCount = () => {
+    setIndex(index - 1); 
+  }
+    
+  return (
+    <div>
+      <Card css={{ w: "100%", h: "500px" }}>
    
-    <Card.Body css={{ p: 0 }}>
-      <Card.Image
-        src={urls[i]}
-        objectFit="cover"
-        width="100"
-        height="100%"
-        alt="Relaxing app background"
-        
-      />
-    </Card.Body>
-    <Card.Footer
-      isBlurred
-      css={{
-        position: "absolute",
-        bgBlur: "#0f111466",
-        borderTop: "$borderWeights$light solid $gray800",
-        bottom: 0,
-        zIndex: 1,
-      }}
-    >
-      <Row justify="center" align="center">
-        
-      <Button onPress={() => (i++) && console.log(i)}>
-         Pick an Image 
-          </Button>    
-          
-      </Row>
-    </Card.Footer>
-  </Card>
-);
+   <Card.Body css={{ p: 0 }}>
+     <Card.Image
+       src={urls[index]}
+       objectFit="cover"
+       width="100"
+       height="100%"
+       alt="Relaxing app background"
+       
+     />
+   </Card.Body>
+   <Card.Footer
+     isBlurred
+     css={{
+       position: "absolute",
+       bgBlur: "#0f111466",
+       borderTop: "$borderWeights$light solid $gray800",
+       bottom: 0,
+       zIndex: 1,
+     }}
+   >
+     <Row justify="center" align="center">
+       
+     
+         
+     </Row>
+   </Card.Footer>
+ </Card>
 
+  <Col justify="center" align="center">
+    <br/>
+       
+     <Button onPress={increaseCount}>
+        Pick an Image
+     </Button>
+      <br/>
+     <Button onPress={decreaseCount}>
+       Rotate
+     </Button>
+     <br/>
+     <Button onPress={decreaseCount}>
+      Adjust
+     </Button>
+     </Col>
+     </div>
+  )
+};
+  
