@@ -15,9 +15,7 @@ function App() {
               </div>
       
       <div className="card">
-      <Button onClick={() => setCount((count) => count + 1)}>
-         Pick an Image {count}
-          </Button>
+      
         <p>
          
         </p>
