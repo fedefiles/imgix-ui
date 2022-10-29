@@ -1,6 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
+
 let i:number = 0;
 let urls: string[] = [
 "https://assets.imgix.net/unsplash/bear.jpg",
@@ -43,6 +45,7 @@ let urls: string[] = [
 
 export const Card1 = () => (
 
+
   <Card css={{ w: "100%", h: "500px" }}>
    
     <Card.Body css={{ p: 0 }}>
@@ -67,7 +70,7 @@ export const Card1 = () => (
     >
       <Row justify="center" align="center">
         
-      <Button onPress={() => i => i + 1}>
+      <Button onPress={() => i=i+1}>
          Pick an Image 
           </Button>    
           
