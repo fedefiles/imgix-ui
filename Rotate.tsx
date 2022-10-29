@@ -42,7 +42,7 @@ let urls: string[] = [
 
 
   
-export const Rotate = () => {
+function Rotate() {
   const [index, setIndex] = useState(0);
     
   const increaseCount = () => {
@@ -102,3 +102,5 @@ export const Rotate = () => {
      </div>
   )
 };
+
+export default Rotate

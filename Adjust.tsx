@@ -42,7 +42,7 @@ let urls: string[] = [
 
 
   
-export const Adjust = () => {
+function Adjust() {
   const [index, setIndex] = useState(0);
     
   const increaseCount = () => {
@@ -102,3 +102,5 @@ export const Adjust = () => {
      </div>
   )
 };
+
+export default Adjust
