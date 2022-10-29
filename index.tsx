@@ -6,8 +6,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Rotate from "./rotate";
-import Adjust from "./adjust";
+import {Rotate} from "./rotate";
+import {Adjust} from "./adjust";
 
 import App from './App';
 
