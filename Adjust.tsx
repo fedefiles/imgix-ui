@@ -103,4 +103,4 @@ function Adjust() {
   )
 };
 
-export default Adjust
+export default Adjust;

@@ -103,4 +103,4 @@ function Rotate() {
   )
 };
 
-export default Rotate
+export default Rotate;
