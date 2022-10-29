@@ -70,7 +70,7 @@ export const Card1 = () => (
     >
       <Row justify="center" align="center">
         
-      <Button onPress={() => i=i+1}>
+      <Button onPress={() => (i++) && console.log(i)}>
          Pick an Image 
           </Button>    
           
